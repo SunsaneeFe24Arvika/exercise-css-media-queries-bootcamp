@@ -81,7 +81,7 @@ footer {
 
 
 
-/* @media screen and (min-width: 850px) {
+@media screen and (min-width: 850px) {
     section {
         flex-direction: row;
     }
@@ -101,4 +101,4 @@ footer {
     ul {
         grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
     }
-} */
+} 

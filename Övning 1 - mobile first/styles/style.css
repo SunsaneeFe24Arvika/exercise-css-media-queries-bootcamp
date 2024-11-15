@@ -51,3 +51,37 @@ footer {
     width: 100%;
     margin-top: 0.5rem;
 }
+
+
+
+/* Anpassning för laptops (mellan 1024px och 1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    /* Wrapper */
+    .wrapper {
+        width: 90%; /* Gör wrappern lite smalare för att skapa marginaler på sidorna */
+        padding: 1rem; /* Lägger till padding för bättre layout */
+    }
+
+    /* Header */
+    header {
+        height: 8rem; /* Kan ökas för att skapa mer utrymme */
+    }
+
+    /* Content */
+    .content {
+        flex-direction: row; /* Håll sektionerna horisontellt på laptops */
+        justify-content: space-around; /* Skapar jämna mellanrum */
+    }
+
+    /* Sektioner */
+    section, main, aside {
+        width: 30%; /* Anpassar bredd för varje del */
+        height: auto;
+    }
+
+    /* Footer */
+    footer {
+        height: 10rem; /* Större höjd för bättre utrymme på laptops */
+        margin-top: 1rem;
+    }
+}

@@ -55,3 +55,61 @@ footer {
     width: 100%;
     margin-top: 0.5rem;
 }
+
+/*anpassning för mobilskärmer 768px eller mindre*/
+@media screen and (max-width: 768px) {
+
+    .wrapper {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    header {
+        width: 100%;
+        height: 8rem;
+        margin: 0;
+    }
+
+    ul {
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); 
+        gap: 0.2rem;
+        margin: 0.5rem 0 0 0; 
+        width: 100%;
+        
+    }
+
+    li {
+        height: 5rem; 
+    }
+
+    section {
+        flex-direction: column;
+        height: 20rem;
+        width: 100%;
+    }
+
+    article {
+        margin: 0.5rem 0 0 0;
+    }
+
+    /* section {
+        flex-direction: column;
+        height: 22rem;
+        margin: 0.5rem;
+    } */
+
+    /* Den här vill jag lägga tillbaka margin-right */
+
+    /* article:nth-child(3) {
+        margin-right: 0.5rem;
+    
+    } */
+    footer {
+        width: 100%;
+        /* margin: 0.5rem; */
+        height: 5rem;
+        
+    }
+
+    
+}

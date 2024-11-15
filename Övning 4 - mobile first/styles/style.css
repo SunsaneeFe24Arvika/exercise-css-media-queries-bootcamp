@@ -63,3 +63,36 @@ footer {
     width: 100%;
     margin-top: 0.5rem;
 }
+
+/* Anpassning för lapptops mellan 1024px upptill 1440px */
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .content-wrapper {
+        flex-direction: column;
+    }
+    figure {
+        align-self: flex-start;
+    }
+    section {
+    margin-top: 3rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    }
+    article:nth-child(1) {
+        background-color: #B2008A;
+    }
+    
+    article:nth-child(2) {
+        background-color: #FD96A9;
+    }
+
+    button {
+        width: 16rem;
+    }
+
+}
